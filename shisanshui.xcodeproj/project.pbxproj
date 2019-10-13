@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F354C12D3C9DBC792166217 /* libPods-shisanshui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */; };
+		E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */; };
+		E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8E2352F84500955C9E /* ZWAPIRequestTool.m */; };
+		E3944A922352F84500955C9E /* ZWNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A902352F84500955C9E /* ZWNetworkingManager.m */; };
 		E3ACF182235177BA00F9DFF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3ACF181235177BA00F9DFF5 /* AppDelegate.m */; };
 		E3ACF185235177BA00F9DFF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3ACF184235177BA00F9DFF5 /* ViewController.m */; };
 		E3ACF188235177BA00F9DFF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3ACF186235177BA00F9DFF5 /* Main.storyboard */; };
@@ -16,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11F8D86CA9BE9E867F89A142 /* Pods-shisanshui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.debug.xcconfig"; sourceTree = "<group>"; };
+		A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shisanshui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.release.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.release.xcconfig"; sourceTree = "<group>"; };
+		E3944A892352D61800955C9E /* LoginAndRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterViewController.h; sourceTree = "<group>"; };
+		E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterViewController.m; sourceTree = "<group>"; };
+		E3944A8D2352F84500955C9E /* ZWAPIRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAPIRequestTool.h; sourceTree = "<group>"; };
+		E3944A8E2352F84500955C9E /* ZWAPIRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAPIRequestTool.m; sourceTree = "<group>"; };
+		E3944A8F2352F84500955C9E /* ZWNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWNetworkingManager.h; sourceTree = "<group>"; };
+		E3944A902352F84500955C9E /* ZWNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWNetworkingManager.m; sourceTree = "<group>"; };
 		E3ACF17D235177BA00F9DFF5 /* shisanshui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shisanshui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3ACF180235177BA00F9DFF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3ACF181235177BA00F9DFF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +46,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F354C12D3C9DBC792166217 /* libPods-shisanshui.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13F155E9D7EB61415B18E87D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		515B28F861FA1255786ABFDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11F8D86CA9BE9E867F89A142 /* Pods-shisanshui.debug.xcconfig */,
+				AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3888CB92351D015004DA23A /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				E3944A892352D61800955C9E /* LoginAndRegisterViewController.h */,
+				E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		E3944A8C2352F84500955C9E /* NetWorkingTool */ = {
+			isa = PBXGroup;
+			children = (
+				E3944A8D2352F84500955C9E /* ZWAPIRequestTool.h */,
+				E3944A8E2352F84500955C9E /* ZWAPIRequestTool.m */,
+				E3944A8F2352F84500955C9E /* ZWNetworkingManager.h */,
+				E3944A902352F84500955C9E /* ZWNetworkingManager.m */,
+			);
+			path = NetWorkingTool;
+			sourceTree = "<group>";
+		};
 		E3ACF174235177BA00F9DFF5 = {
 			isa = PBXGroup;
 			children = (
 				E3ACF17F235177BA00F9DFF5 /* shisanshui */,
 				E3ACF17E235177BA00F9DFF5 /* Products */,
+				515B28F861FA1255786ABFDD /* Pods */,
+				13F155E9D7EB61415B18E87D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +111,8 @@
 		E3ACF17F235177BA00F9DFF5 /* shisanshui */ = {
 			isa = PBXGroup;
 			children = (
+				E3944A8C2352F84500955C9E /* NetWorkingTool */,
+				E3888CB92351D015004DA23A /* LoginAndRegister */,
 				E3ACF180235177BA00F9DFF5 /* AppDelegate.h */,
 				E3ACF181235177BA00F9DFF5 /* AppDelegate.m */,
 				E3ACF183235177BA00F9DFF5 /* ViewController.h */,
@@ -78,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3ACF193235177BC00F9DFF5 /* Build configuration list for PBXNativeTarget "shisanshui" */;
 			buildPhases = (
+				9C6172DAA7DF0E83B3F3A77B /* [CP] Check Pods Manifest.lock */,
 				E3ACF179235177BA00F9DFF5 /* Sources */,
 				E3ACF17A235177BA00F9DFF5 /* Frameworks */,
 				E3ACF17B235177BA00F9DFF5 /* Resources */,
+				B37465302BCCF1D7BB5CD404 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,13 +193,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C6172DAA7DF0E83B3F3A77B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shisanshui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37465302BCCF1D7BB5CD404 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3ACF179235177BA00F9DFF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3944A922352F84500955C9E /* ZWNetworkingManager.m in Sources */,
+				E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */,
 				E3ACF185235177BA00F9DFF5 /* ViewController.m in Sources */,
 				E3ACF190235177BC00F9DFF5 /* main.m in Sources */,
+				E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */,
 				E3ACF182235177BA00F9DFF5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +382,7 @@
 		};
 		E3ACF194235177BC00F9DFF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F8D86CA9BE9E867F89A142 /* Pods-shisanshui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +401,7 @@
 		};
 		E3ACF195235177BC00F9DFF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
