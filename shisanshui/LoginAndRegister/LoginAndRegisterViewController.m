@@ -8,6 +8,8 @@
 
 #import "LoginAndRegisterViewController.h"
 #import "ZWAPIRequestTool.h"
+#import "MenuViewController.h"
+#import "UserManager.h"
 @interface LoginAndRegisterViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *line_1;
 @property (weak, nonatomic) IBOutlet UILabel *line2;
@@ -34,7 +36,17 @@
 - (IBAction)LoginOrRegister:(UIButton *)sender {
     if (_isLogin) {
         [ZWAPIRequestTool requestLoginWithPhoneNumber:self.UserNameTextField.text password:self.PasswordTextField.text result:^(id response, BOOL success) {
-            NSLog(@"response1:%@",response);
+            NSLog(@"Login response:%@",response);
+            NSString *codeStr = response[@"status"];
+            int code =[codeStr intValue];
+            NSDictionary *data = response[@"data"];
+            NSLog(@"code%@",code);
+            if (success&&code==0) {
+                [UserManager sharedManager].token = data[@"token"];
+                UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                MenuViewController *vc =[sb instantiateViewControllerWithIdentifier:@"MenuViewController"];
+                [self presentViewController:vc animated:YES completion:nil];
+            }
         }];
     }else{
         [ZWAPIRequestTool requestRegisterWithPhoneNumber:self.UserNameTextField.text password:self.PasswordTextField.text result:^(id response, BOOL success) {

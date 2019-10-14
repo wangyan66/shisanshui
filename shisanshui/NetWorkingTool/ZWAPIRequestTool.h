@@ -12,7 +12,7 @@
 typedef void(^APIRequestResult)(id response, BOOL success);
 
 @interface ZWAPIRequestTool : NSObject
-
+@property (nonatomic,strong) NSString *token;
 
 //// 请求验证码
 //+ (void)requestSendCodeWithPhone:(NSString *)phone result:(APIRequestResult)result;

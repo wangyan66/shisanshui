@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E93826223540EE50029A64A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826123540EE50029A64A /* MenuViewController.m */; };
+		3E93826523541CF70029A64A /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826423541CF70029A64A /* UserManager.m */; };
+		3E938269235426160029A64A /* WYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E938267235426160029A64A /* WYTableViewCell.m */; };
+		3E93826A235426160029A64A /* WYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E938268235426160029A64A /* WYTableViewCell.xib */; };
+		3E93826E2354289E0029A64A /* RankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826D2354289E0029A64A /* RankTableViewController.m */; };
 		8F354C12D3C9DBC792166217 /* libPods-shisanshui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */; };
 		E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */; };
 		E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8E2352F84500955C9E /* ZWAPIRequestTool.m */; };
@@ -21,6 +26,15 @@
 
 /* Begin PBXFileReference section */
 		11F8D86CA9BE9E867F89A142 /* Pods-shisanshui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.debug.xcconfig"; sourceTree = "<group>"; };
+		3E93826023540EE50029A64A /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		3E93826123540EE50029A64A /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		3E93826323541CF70029A64A /* UserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		3E93826423541CF70029A64A /* UserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		3E938266235426160029A64A /* WYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTableViewCell.h; sourceTree = "<group>"; };
+		3E938267235426160029A64A /* WYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTableViewCell.m; sourceTree = "<group>"; };
+		3E938268235426160029A64A /* WYTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYTableViewCell.xib; sourceTree = "<group>"; };
+		3E93826C2354289E0029A64A /* RankTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankTableViewController.h; sourceTree = "<group>"; };
+		3E93826D2354289E0029A64A /* RankTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankTableViewController.m; sourceTree = "<group>"; };
 		A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shisanshui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.release.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.release.xcconfig"; sourceTree = "<group>"; };
 		E3944A892352D61800955C9E /* LoginAndRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterViewController.h; sourceTree = "<group>"; };
@@ -59,6 +73,15 @@
 				A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E93826B2354287D0029A64A /* 排行榜 */ = {
+			isa = PBXGroup;
+			children = (
+				3E93826C2354289E0029A64A /* RankTableViewController.h */,
+				3E93826D2354289E0029A64A /* RankTableViewController.m */,
+			);
+			path = "排行榜";
 			sourceTree = "<group>";
 		};
 		515B28F861FA1255786ABFDD /* Pods */ = {
@@ -113,6 +136,14 @@
 			children = (
 				E3944A8C2352F84500955C9E /* NetWorkingTool */,
 				E3888CB92351D015004DA23A /* LoginAndRegister */,
+				3E93826023540EE50029A64A /* MenuViewController.h */,
+				3E93826B2354287D0029A64A /* 排行榜 */,
+				3E938266235426160029A64A /* WYTableViewCell.h */,
+				3E938267235426160029A64A /* WYTableViewCell.m */,
+				3E938268235426160029A64A /* WYTableViewCell.xib */,
+				3E93826323541CF70029A64A /* UserManager.h */,
+				3E93826423541CF70029A64A /* UserManager.m */,
+				3E93826123540EE50029A64A /* MenuViewController.m */,
 				E3ACF180235177BA00F9DFF5 /* AppDelegate.h */,
 				E3ACF181235177BA00F9DFF5 /* AppDelegate.m */,
 				E3ACF183235177BA00F9DFF5 /* ViewController.h */,
@@ -188,6 +219,7 @@
 				E3ACF18D235177BC00F9DFF5 /* LaunchScreen.storyboard in Resources */,
 				E3ACF18A235177BC00F9DFF5 /* Assets.xcassets in Resources */,
 				E3ACF188235177BA00F9DFF5 /* Main.storyboard in Resources */,
+				3E93826A235426160029A64A /* WYTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +271,12 @@
 			files = (
 				E3944A922352F84500955C9E /* ZWNetworkingManager.m in Sources */,
 				E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */,
+				3E93826523541CF70029A64A /* UserManager.m in Sources */,
 				E3ACF185235177BA00F9DFF5 /* ViewController.m in Sources */,
 				E3ACF190235177BC00F9DFF5 /* main.m in Sources */,
+				3E93826E2354289E0029A64A /* RankTableViewController.m in Sources */,
+				3E938269235426160029A64A /* WYTableViewCell.m in Sources */,
+				3E93826223540EE50029A64A /* MenuViewController.m in Sources */,
 				E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */,
 				E3ACF182235177BA00F9DFF5 /* AppDelegate.m in Sources */,
 			);
