@@ -10,6 +10,10 @@
 
 @implementation WYTableViewCell
 
++(instancetype)loadCell{
+    
+    return [[[NSBundle mainBundle] loadNibNamed:@"WYTableViewCell" owner:self options:nil] lastObject];
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ziti.ttf">
+            <string>yizhiqingshu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WYtitleView">
+            <rect key="frame" x="0.0" y="0.0" width="724" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-L1-pqA">
+                    <rect key="frame" x="144" y="8.3333333333333339" width="34" height="22.333333333333329"/>
+                    <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jce-YX-frp">
+                    <rect key="frame" x="383" y="8.3333333333333339" width="49.666666666666686" height="22.333333333333329"/>
+                    <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz3-CE-4PI">
+                    <rect key="frame" x="532.66666666666663" y="8.3333333333333339" width="16" height="22.333333333333329"/>
+                    <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-nx-CaS">
+                    <rect key="frame" x="269" y="8.3333333333333339" width="34" height="22.333333333333329"/>
+                    <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xs-wU-srq">
+                    <rect key="frame" x="624" y="8" width="34" height="23"/>
+                    <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="gMM-nx-CaS" firstAttribute="centerY" secondItem="CQW-L1-pqA" secondAttribute="centerY" id="9BL-P6-RO5"/>
+                <constraint firstItem="gMM-nx-CaS" firstAttribute="leading" secondItem="CQW-L1-pqA" secondAttribute="trailing" constant="91" id="FcB-KG-vZb"/>
+                <constraint firstItem="CQW-L1-pqA" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Qx6-wY-862"/>
+                <constraint firstItem="CQW-L1-pqA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="RIo-1q-6kG"/>
+                <constraint firstItem="wz3-CE-4PI" firstAttribute="baseline" secondItem="gMM-nx-CaS" secondAttribute="baseline" id="Sd0-vN-NqB"/>
+                <constraint firstItem="9Xs-wU-srq" firstAttribute="centerY" secondItem="wz3-CE-4PI" secondAttribute="centerY" id="hAa-wv-AOP"/>
+                <constraint firstItem="wz3-CE-4PI" firstAttribute="centerY" secondItem="jce-YX-frp" secondAttribute="centerY" id="jpN-jM-JDC"/>
+                <constraint firstItem="9Xs-wU-srq" firstAttribute="leading" secondItem="wz3-CE-4PI" secondAttribute="trailing" constant="75.333333333333371" id="kJD-RK-cQo"/>
+                <constraint firstItem="jce-YX-frp" firstAttribute="leading" secondItem="gMM-nx-CaS" secondAttribute="trailing" constant="80" id="uYL-6q-Of3"/>
+                <constraint firstItem="wz3-CE-4PI" firstAttribute="leading" secondItem="jce-YX-frp" secondAttribute="trailing" constant="100" id="wrK-Rl-LEH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132.26600985221674" y="-86.400000000000006"/>
+        </view>
+    </objects>
+</document>

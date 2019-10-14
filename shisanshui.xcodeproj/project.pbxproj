@@ -11,7 +11,10 @@
 		3E93826523541CF70029A64A /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826423541CF70029A64A /* UserManager.m */; };
 		3E938269235426160029A64A /* WYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E938267235426160029A64A /* WYTableViewCell.m */; };
 		3E93826A235426160029A64A /* WYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E938268235426160029A64A /* WYTableViewCell.xib */; };
-		3E93826E2354289E0029A64A /* RankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826D2354289E0029A64A /* RankTableViewController.m */; };
+		3E93827123546BB10029A64A /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93827023546BB10029A64A /* RankViewController.m */; };
+		3E93827423548AD60029A64A /* WYtitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93827323548AD60029A64A /* WYtitleView.m */; };
+		3E93827623548AFE0029A64A /* WYtitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E93827523548AFE0029A64A /* WYtitleView.xib */; };
+		3E9382782354AE770029A64A /* ziti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9382772354AE770029A64A /* ziti.ttf */; };
 		8F354C12D3C9DBC792166217 /* libPods-shisanshui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */; };
 		E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */; };
 		E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8E2352F84500955C9E /* ZWAPIRequestTool.m */; };
@@ -33,8 +36,12 @@
 		3E938266235426160029A64A /* WYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTableViewCell.h; sourceTree = "<group>"; };
 		3E938267235426160029A64A /* WYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTableViewCell.m; sourceTree = "<group>"; };
 		3E938268235426160029A64A /* WYTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYTableViewCell.xib; sourceTree = "<group>"; };
-		3E93826C2354289E0029A64A /* RankTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankTableViewController.h; sourceTree = "<group>"; };
-		3E93826D2354289E0029A64A /* RankTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankTableViewController.m; sourceTree = "<group>"; };
+		3E93826F23546BB10029A64A /* RankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		3E93827023546BB10029A64A /* RankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		3E93827223548AD60029A64A /* WYtitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYtitleView.h; sourceTree = "<group>"; };
+		3E93827323548AD60029A64A /* WYtitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYtitleView.m; sourceTree = "<group>"; };
+		3E93827523548AFE0029A64A /* WYtitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYtitleView.xib; sourceTree = "<group>"; };
+		3E9382772354AE770029A64A /* ziti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ziti.ttf; sourceTree = "<group>"; };
 		A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shisanshui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.release.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.release.xcconfig"; sourceTree = "<group>"; };
 		E3944A892352D61800955C9E /* LoginAndRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterViewController.h; sourceTree = "<group>"; };
@@ -78,8 +85,11 @@
 		3E93826B2354287D0029A64A /* 排行榜 */ = {
 			isa = PBXGroup;
 			children = (
-				3E93826C2354289E0029A64A /* RankTableViewController.h */,
-				3E93826D2354289E0029A64A /* RankTableViewController.m */,
+				3E93826F23546BB10029A64A /* RankViewController.h */,
+				3E93827023546BB10029A64A /* RankViewController.m */,
+				3E93827223548AD60029A64A /* WYtitleView.h */,
+				3E93827323548AD60029A64A /* WYtitleView.m */,
+				3E93827523548AFE0029A64A /* WYtitleView.xib */,
 			);
 			path = "排行榜";
 			sourceTree = "<group>";
@@ -148,6 +158,7 @@
 				E3ACF181235177BA00F9DFF5 /* AppDelegate.m */,
 				E3ACF183235177BA00F9DFF5 /* ViewController.h */,
 				E3ACF184235177BA00F9DFF5 /* ViewController.m */,
+				3E9382772354AE770029A64A /* ziti.ttf */,
 				E3ACF186235177BA00F9DFF5 /* Main.storyboard */,
 				E3ACF189235177BC00F9DFF5 /* Assets.xcassets */,
 				E3ACF18B235177BC00F9DFF5 /* LaunchScreen.storyboard */,
@@ -217,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3ACF18D235177BC00F9DFF5 /* LaunchScreen.storyboard in Resources */,
+				3E93827623548AFE0029A64A /* WYtitleView.xib in Resources */,
+				3E9382782354AE770029A64A /* ziti.ttf in Resources */,
 				E3ACF18A235177BC00F9DFF5 /* Assets.xcassets in Resources */,
 				E3ACF188235177BA00F9DFF5 /* Main.storyboard in Resources */,
 				3E93826A235426160029A64A /* WYTableViewCell.xib in Resources */,
@@ -273,10 +286,11 @@
 				E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */,
 				3E93826523541CF70029A64A /* UserManager.m in Sources */,
 				E3ACF185235177BA00F9DFF5 /* ViewController.m in Sources */,
+				3E93827123546BB10029A64A /* RankViewController.m in Sources */,
 				E3ACF190235177BC00F9DFF5 /* main.m in Sources */,
-				3E93826E2354289E0029A64A /* RankTableViewController.m in Sources */,
 				3E938269235426160029A64A /* WYTableViewCell.m in Sources */,
 				3E93826223540EE50029A64A /* MenuViewController.m in Sources */,
+				3E93827423548AD60029A64A /* WYtitleView.m in Sources */,
 				E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */,
 				E3ACF182235177BA00F9DFF5 /* AppDelegate.m in Sources */,
 			);

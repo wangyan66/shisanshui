@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WYTableViewCell : UITableViewCell
-
++(instancetype)loadCell;
 @end
 
 NS_ASSUME_NONNULL_END

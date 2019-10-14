@@ -7,12 +7,23 @@
 //
 
 #import "MenuViewController.h"
-
+#import "RankViewController.h"
 @interface MenuViewController ()
 
 @end
 
 @implementation MenuViewController
+- (IBAction)startBtn:(UIButton *)sender {
+}
+- (IBAction)rankBtn:(id)sender {
+    RankViewController *vc = [[RankViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)history:(UIButton *)sender {
+}
+- (IBAction)LogoutBtn:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
