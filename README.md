@@ -1,2 +1,2 @@
 # shisanshui
-![](https://img.shields.io/badge/language-swift-orange.svg)
+![](https://img.shields.io/badge/language-Objective-c-blue.svg)
