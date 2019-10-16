@@ -38,15 +38,19 @@
     __weak __typeof(self) weakSelf = self;
     if (_isLogin) {
         [ZWAPIRequestTool requestLoginWithPhoneNumber:self.UserNameTextField.text password:self.PasswordTextField.text result:^(id response, BOOL success) {
+            if(!success){
+                return;
+            }
             NSLog(@"Login response:%@",response);
             NSString *codeStr = response[@"status"];
             int code =[codeStr intValue];
             NSDictionary *data = response[@"data"];
             NSLog(@"code%@",code);
-            if (success&&code==0) {
+            if (code==0) {
                 NSTimeInterval kTimeIntervalShort = 1.0;
                 [[ZWHUDTool showPlainHUDInView:[UIApplication sharedApplication].keyWindow text:@"登录成功"] hideAnimated:YES afterDelay:kTimeIntervalShort];
                 [UserManager sharedManager].token = data[@"token"];
+                [UserManager sharedManager].user_id = data[@"user_id"];
                 UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 MenuViewController *vc =[sb instantiateViewControllerWithIdentifier:@"MenuViewController"];
                 UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];

@@ -9,6 +9,7 @@
 #import "gameViewController.h"
 #import "ZWAPIRequestTool.h"
 #import "UserManager.h"
+#import "ZWHUDTool.h"
 @interface gameViewController ()
 @property (nonatomic,assign)int identifier;
 @property (nonatomic,strong) NSDictionary *data;
@@ -49,6 +50,7 @@
     [dataTask resume];
     
 }
+//发送牌
 - (void)send{
     NSDictionary *headers = @{ @"content-type": @"application/json",
                                @"x-auth-token": [UserManager sharedManager].token };
@@ -75,6 +77,14 @@
                                                         
                                                         NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
                                                         NSLog(@"send card response%@",responseObject);
+                                                
+                                                        
+                                                        dispatch_async(dispatch_get_main_queue(), ^{
+                                                                    NSTimeInterval kTimeIntervalShort = 0.8;
+                                                [[ZWHUDTool showPlainHUDInView:[UIApplication sharedApplication].keyWindow text:@"出牌成功"] hideAnimated:YES afterDelay:kTimeIntervalShort];
+                                                            [self.navigationController popViewControllerAnimated:YES];
+                                                        });
+                                                        
                                                     }
                                                 }];
     [dataTask resume];

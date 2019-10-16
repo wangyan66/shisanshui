@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UserManager : NSObject
 @property (nonatomic,strong) NSString *token;
+@property (nonatomic,strong) NSNumber *user_id;
 + (instancetype)sharedManager;
 
 @end

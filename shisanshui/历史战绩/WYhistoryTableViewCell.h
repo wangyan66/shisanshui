@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WYhistoryTableViewCell : UITableViewCell
 +(instancetype)loadCell;
+@property (weak, nonatomic) IBOutlet UILabel *ID;
+@property (weak, nonatomic) IBOutlet UILabel *poker;
+@property (weak, nonatomic) IBOutlet UILabel *score;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+
 @end
 
 NS_ASSUME_NONNULL_END

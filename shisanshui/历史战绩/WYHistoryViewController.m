@@ -13,6 +13,7 @@
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 @interface WYHistoryViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataAry;
 @end
 
 @implementation WYHistoryViewController
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"历史战绩";
+    _dataAry = [NSMutableArray array];
     [self setupUI];
     [self setupTableView];
     [self fecthData];
@@ -27,16 +29,15 @@
 }
 - (void)fecthData{
     __weak __typeof(self) weakSelf = self;
-    NSDictionary *headers = @{ @"x-auth-token": [UserManager sharedManager].token };
-    NSDictionary *parameters = @{@"player_id":@474,@"limit":@5,@"page":@1};
     
-    NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.shisanshui.rtxux.xyz/history"]
+    NSDictionary *headers = @{ @"x-auth-token": [UserManager sharedManager].token };
+    NSString *str = [NSString stringWithFormat:@"https://api.shisanshui.rtxux.xyz/history?page=1&limit=10&player_id=%@",[UserManager sharedManager].user_id];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:str]
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
-                                                       timeoutInterval:20.0];
+                                                       timeoutInterval:10.0];
     [request setHTTPMethod:@"GET"];
     [request setAllHTTPHeaderFields:headers];
-    [request setHTTPBody:postData];
+
     
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
@@ -48,6 +49,8 @@
                                                         NSLog(@"%@", httpResponse);
                                                         NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
                                                         NSLog(@"history response%@",responseObject);
+                                                        self.dataAry= responseObject[@"data"];
+                                                        [self relo];
                                                     }
                                                 }];
     [dataTask resume];
@@ -57,13 +60,20 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
+- (void)relo{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [self.tableView reloadData];
+    });
+}
 -(NSString *)getDateStringWithTimeStr:(NSString *)str{
-    NSTimeInterval time=[str doubleValue]/1000;//传入的时间戳str如果是精确到毫秒的记得要/1000
+    NSTimeInterval time=[str doubleValue];//传入的时间戳str如果是精确到毫秒的记得要/1000
     NSDate *detailDate=[NSDate dateWithTimeIntervalSince1970:time];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; //实例化一个NSDateFormatter对象
     //设定时间格式,这里可以设置成自己需要的格式
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss SS"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *currentDateStr = [dateFormatter stringFromDate: detailDate];
+    NSLog(@"currentDate%@",currentDateStr);
     return currentDateStr;
 }
 - (void)setupUI{
@@ -73,6 +83,7 @@
     
     
 }
+
 -(void)setupTableView{
     UITableView *tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     tableView.backgroundColor = [UIColor clearColor];
@@ -98,7 +109,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     
-    return 10;
+    return _dataAry.count;
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -109,10 +120,26 @@
     }
     cell.backgroundColor = [UIColor clearColor];
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    NSDictionary *dic = _dataAry[indexPath.row];
+    NSArray *card = dic[@"card"];
+    cell.ID.text=[NSString stringWithFormat:@"战局ID:%@",dic[@"id"]];
+    if(card.count == 1){
+        
+    cell.poker.text=[NSString stringWithFormat:@"%@",card[0]];
+    }else{
+        cell.poker.text=[NSString stringWithFormat:@"%@ %@ %@",card[0],card[1],card[2]];
+    }
+    
+    cell.score.text=[NSString stringWithFormat:@"分数:%@",dic[@"score"]];
+    
+    cell.time.text = [self getDateStringWithTimeStr:dic[@"timestamp"]];
     return cell;
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 85;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 @end
