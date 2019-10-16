@@ -26,6 +26,27 @@
     return image64;
     
 }
+//+ (void)requestPokerWithToken:(NSString *)token result:(APIRequestResult)result{
+//    [ZWAPIRequestTool requestWithAPI:@"https://api.shisanshui.rtxux.xyz/game/submit" parameters:nil result:result];
+//
+//}
++ (void)requestPokerWithData:(NSDictionary *)dic result:(APIRequestResult)result{
+    [ZWAPIRequestTool requestWithAPI:@"http://47.101.140.66/handle/hello2" parameters:dic result:result];
+    
+}
++ (void)requestRankInfo:(APIRequestResult)result {
+    [ZWNetworkingManager getWithURLString:@"https://api.shisanshui.rtxux.xyz/rank"
+                                  success:^(NSURLSessionDataTask *task, id responseObject) {
+                                      if (result) {
+                                          result(responseObject, YES);
+                                      }
+                                  }
+                                  failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                      if (result) {
+                                          result(error, NO);
+                                      }
+                                  }];
+}
 + (void)requestRegisterWithPhoneNumber:(NSString *)phone password:(NSString *)password result:(APIRequestResult)result{
     [ZWAPIRequestTool requestWithAPI:@"https://api.shisanshui.rtxux.xyz/auth/register" parameters:@{@"username":phone,@"password":password} result:result];
 }
@@ -61,7 +82,7 @@
 + (void)requestWithAPI:(NSString *)API parameters:(id)params result:(APIRequestResult)result {
     NSLog(@"通用请求借口传出的参数:%@",params);
     
-    //[ZWAPIRequestTool buildParameters:params ? params : @{}]
+    
     [ZWNetworkingManager postWithURLString:API
                                     params:params
                                    success:^(NSURLSessionDataTask *task, id responseObject) {

@@ -5,4 +5,5 @@ target 'shisanshui' do
   # Pods for shisanshui
   pod 'IQKeyboardManager'
   pod 'AFNetworking'
+  pod 'MBProgressHUD'
 end

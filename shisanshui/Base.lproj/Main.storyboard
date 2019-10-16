@@ -318,8 +318,64 @@
             </objects>
             <point key="canvasLocation" x="530.54187192118229" y="-408.80000000000001"/>
         </scene>
+        <!--Game View Controller-->
+        <scene sceneID="MGl-PJ-gTN">
+            <objects>
+                <viewController storyboardIdentifier="gameViewController" id="5Ft-oN-xTu" customClass="gameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yUX-G9-Ein">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaishiyouxi" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-dZ-jAK">
+                                <rect key="frame" x="0.0" y="-44" width="812" height="419"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5h-47-GTd">
+                                <rect key="frame" x="290.66666666666669" y="324" width="231.00000000000006" height="30"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g9F-9E-FOL"/>
+                                    <constraint firstAttribute="width" constant="231" id="nAd-As-teZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="出牌">
+                                    <color key="titleColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendPoker:" destination="5Ft-oN-xTu" eventType="touchUpInside" id="pet-B8-bhD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iNg-dZ-jAK" firstAttribute="trailing" secondItem="a24-0G-4Zq" secondAttribute="trailing" constant="44" id="EFR-4d-1HO"/>
+                            <constraint firstItem="iNg-dZ-jAK" firstAttribute="leading" secondItem="a24-0G-4Zq" secondAttribute="leading" constant="-44" id="UbO-s0-5Ou"/>
+                            <constraint firstItem="iNg-dZ-jAK" firstAttribute="top" secondItem="a24-0G-4Zq" secondAttribute="top" constant="-44" id="Xh5-LV-GdN"/>
+                            <constraint firstItem="p5h-47-GTd" firstAttribute="top" secondItem="iNg-dZ-jAK" secondAttribute="bottom" constant="-51" id="gPA-fv-IDy"/>
+                            <constraint firstItem="p5h-47-GTd" firstAttribute="centerX" secondItem="iNg-dZ-jAK" secondAttribute="centerX" id="mtV-dU-YFT"/>
+                            <constraint firstItem="a24-0G-4Zq" firstAttribute="bottom" secondItem="iNg-dZ-jAK" secondAttribute="bottom" constant="-21" id="yaX-kN-RUj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a24-0G-4Zq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHt-Ng-sAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286.4532019704434" y="-394.39999999999998"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="kaishiyouxi" width="2436" height="1125"/>
         <image name="login_back" width="812" height="375"/>
         <image name="main" width="2436" height="1125"/>
     </resources>

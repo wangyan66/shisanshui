@@ -27,25 +27,25 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jce-YX-frp">
-                    <rect key="frame" x="383" y="8.3333333333333339" width="49.666666666666686" height="22.333333333333329"/>
+                    <rect key="frame" x="362" y="8.3333333333333339" width="49.666666666666686" height="22.333333333333329"/>
                     <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wz3-CE-4PI">
-                    <rect key="frame" x="532.66666666666663" y="8.3333333333333339" width="16" height="22.333333333333329"/>
-                    <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-nx-CaS">
-                    <rect key="frame" x="269" y="8.3333333333333339" width="34" height="22.333333333333329"/>
+                    <rect key="frame" x="506.66666666666674" y="8.3333333333333339" width="16" height="22.333333333333329"/>
                     <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xs-wU-srq">
-                    <rect key="frame" x="624" y="8" width="34" height="23"/>
+                    <rect key="frame" x="642.66666666666663" y="8" width="34" height="23"/>
+                    <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-nx-CaS">
+                    <rect key="frame" x="258" y="8.3333333333333339" width="34" height="22.333333333333329"/>
                     <fontDescription key="fontDescription" name="yizhiqingshu" family="yizhiqingshu" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -57,15 +57,15 @@
             </accessibility>
             <constraints>
                 <constraint firstItem="gMM-nx-CaS" firstAttribute="centerY" secondItem="CQW-L1-pqA" secondAttribute="centerY" id="9BL-P6-RO5"/>
-                <constraint firstItem="gMM-nx-CaS" firstAttribute="leading" secondItem="CQW-L1-pqA" secondAttribute="trailing" constant="91" id="FcB-KG-vZb"/>
+                <constraint firstItem="gMM-nx-CaS" firstAttribute="leading" secondItem="CQW-L1-pqA" secondAttribute="trailing" constant="80" id="FcB-KG-vZb"/>
                 <constraint firstItem="CQW-L1-pqA" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Qx6-wY-862"/>
                 <constraint firstItem="CQW-L1-pqA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="RIo-1q-6kG"/>
                 <constraint firstItem="wz3-CE-4PI" firstAttribute="baseline" secondItem="gMM-nx-CaS" secondAttribute="baseline" id="Sd0-vN-NqB"/>
                 <constraint firstItem="9Xs-wU-srq" firstAttribute="centerY" secondItem="wz3-CE-4PI" secondAttribute="centerY" id="hAa-wv-AOP"/>
                 <constraint firstItem="wz3-CE-4PI" firstAttribute="centerY" secondItem="jce-YX-frp" secondAttribute="centerY" id="jpN-jM-JDC"/>
-                <constraint firstItem="9Xs-wU-srq" firstAttribute="leading" secondItem="wz3-CE-4PI" secondAttribute="trailing" constant="75.333333333333371" id="kJD-RK-cQo"/>
-                <constraint firstItem="jce-YX-frp" firstAttribute="leading" secondItem="gMM-nx-CaS" secondAttribute="trailing" constant="80" id="uYL-6q-Of3"/>
-                <constraint firstItem="wz3-CE-4PI" firstAttribute="leading" secondItem="jce-YX-frp" secondAttribute="trailing" constant="100" id="wrK-Rl-LEH"/>
+                <constraint firstItem="9Xs-wU-srq" firstAttribute="leading" secondItem="wz3-CE-4PI" secondAttribute="trailing" constant="120" id="kJD-RK-cQo"/>
+                <constraint firstItem="jce-YX-frp" firstAttribute="leading" secondItem="gMM-nx-CaS" secondAttribute="trailing" constant="70" id="uYL-6q-Of3"/>
+                <constraint firstItem="wz3-CE-4PI" firstAttribute="leading" secondItem="jce-YX-frp" secondAttribute="trailing" constant="95" id="wrK-Rl-LEH"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

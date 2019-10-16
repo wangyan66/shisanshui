@@ -16,6 +16,11 @@
 		3E93827623548AFE0029A64A /* WYtitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E93827523548AFE0029A64A /* WYtitleView.xib */; };
 		3E9382782354AE770029A64A /* ziti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9382772354AE770029A64A /* ziti.ttf */; };
 		8F354C12D3C9DBC792166217 /* libPods-shisanshui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */; };
+		E31D17E223553920007B0F5D /* WYhistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D17E023553920007B0F5D /* WYhistoryTableViewCell.m */; };
+		E31D17E323553920007B0F5D /* WYhistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31D17E123553920007B0F5D /* WYhistoryTableViewCell.xib */; };
+		E31D17E623553B55007B0F5D /* WYHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D17E523553B55007B0F5D /* WYHistoryViewController.m */; };
+		E374F8532355777C00B584E3 /* gameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E374F8522355777C00B584E3 /* gameViewController.m */; };
+		E374F85723557F1D00B584E3 /* ZWHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E374F85623557F1D00B584E3 /* ZWHUDTool.m */; };
 		E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */; };
 		E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8E2352F84500955C9E /* ZWAPIRequestTool.m */; };
 		E3944A922352F84500955C9E /* ZWNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A902352F84500955C9E /* ZWNetworkingManager.m */; };
@@ -44,6 +49,15 @@
 		3E9382772354AE770029A64A /* ziti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ziti.ttf; sourceTree = "<group>"; };
 		A09FC2A2DDAAD83CE42D6518 /* libPods-shisanshui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shisanshui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.release.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.release.xcconfig"; sourceTree = "<group>"; };
+		E31D17DF23553920007B0F5D /* WYhistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYhistoryTableViewCell.h; sourceTree = "<group>"; };
+		E31D17E023553920007B0F5D /* WYhistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYhistoryTableViewCell.m; sourceTree = "<group>"; };
+		E31D17E123553920007B0F5D /* WYhistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYhistoryTableViewCell.xib; sourceTree = "<group>"; };
+		E31D17E423553B55007B0F5D /* WYHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYHistoryViewController.h; sourceTree = "<group>"; };
+		E31D17E523553B55007B0F5D /* WYHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYHistoryViewController.m; sourceTree = "<group>"; };
+		E374F8512355777C00B584E3 /* gameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gameViewController.h; sourceTree = "<group>"; };
+		E374F8522355777C00B584E3 /* gameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gameViewController.m; sourceTree = "<group>"; };
+		E374F85523557F1D00B584E3 /* ZWHUDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWHUDTool.h; sourceTree = "<group>"; };
+		E374F85623557F1D00B584E3 /* ZWHUDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWHUDTool.m; sourceTree = "<group>"; };
 		E3944A892352D61800955C9E /* LoginAndRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterViewController.h; sourceTree = "<group>"; };
 		E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterViewController.m; sourceTree = "<group>"; };
 		E3944A8D2352F84500955C9E /* ZWAPIRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAPIRequestTool.h; sourceTree = "<group>"; };
@@ -90,6 +104,9 @@
 				3E93827223548AD60029A64A /* WYtitleView.h */,
 				3E93827323548AD60029A64A /* WYtitleView.m */,
 				3E93827523548AFE0029A64A /* WYtitleView.xib */,
+				3E938266235426160029A64A /* WYTableViewCell.h */,
+				3E938267235426160029A64A /* WYTableViewCell.m */,
+				3E938268235426160029A64A /* WYTableViewCell.xib */,
 			);
 			path = "排行榜";
 			sourceTree = "<group>";
@@ -101,6 +118,36 @@
 				AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E31D17DE23553732007B0F5D /* 历史战绩 */ = {
+			isa = PBXGroup;
+			children = (
+				E31D17DF23553920007B0F5D /* WYhistoryTableViewCell.h */,
+				E31D17E023553920007B0F5D /* WYhistoryTableViewCell.m */,
+				E31D17E123553920007B0F5D /* WYhistoryTableViewCell.xib */,
+				E31D17E423553B55007B0F5D /* WYHistoryViewController.h */,
+				E31D17E523553B55007B0F5D /* WYHistoryViewController.m */,
+			);
+			path = "历史战绩";
+			sourceTree = "<group>";
+		};
+		E374F8502355774B00B584E3 /* 开始游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				E374F8512355777C00B584E3 /* gameViewController.h */,
+				E374F8522355777C00B584E3 /* gameViewController.m */,
+			);
+			path = "开始游戏";
+			sourceTree = "<group>";
+		};
+		E374F85423557F1D00B584E3 /* ZWHUDTool */ = {
+			isa = PBXGroup;
+			children = (
+				E374F85523557F1D00B584E3 /* ZWHUDTool.h */,
+				E374F85623557F1D00B584E3 /* ZWHUDTool.m */,
+			);
+			path = ZWHUDTool;
 			sourceTree = "<group>";
 		};
 		E3888CB92351D015004DA23A /* LoginAndRegister */ = {
@@ -144,15 +191,15 @@
 		E3ACF17F235177BA00F9DFF5 /* shisanshui */ = {
 			isa = PBXGroup;
 			children = (
+				E374F85423557F1D00B584E3 /* ZWHUDTool */,
 				E3944A8C2352F84500955C9E /* NetWorkingTool */,
 				E3888CB92351D015004DA23A /* LoginAndRegister */,
-				3E93826023540EE50029A64A /* MenuViewController.h */,
 				3E93826B2354287D0029A64A /* 排行榜 */,
-				3E938266235426160029A64A /* WYTableViewCell.h */,
-				3E938267235426160029A64A /* WYTableViewCell.m */,
-				3E938268235426160029A64A /* WYTableViewCell.xib */,
+				E31D17DE23553732007B0F5D /* 历史战绩 */,
+				E374F8502355774B00B584E3 /* 开始游戏 */,
 				3E93826323541CF70029A64A /* UserManager.h */,
 				3E93826423541CF70029A64A /* UserManager.m */,
+				3E93826023540EE50029A64A /* MenuViewController.h */,
 				3E93826123540EE50029A64A /* MenuViewController.m */,
 				E3ACF180235177BA00F9DFF5 /* AppDelegate.h */,
 				E3ACF181235177BA00F9DFF5 /* AppDelegate.m */,
@@ -233,6 +280,7 @@
 				E3ACF18A235177BC00F9DFF5 /* Assets.xcassets in Resources */,
 				E3ACF188235177BA00F9DFF5 /* Main.storyboard in Resources */,
 				3E93826A235426160029A64A /* WYTableViewCell.xib in Resources */,
+				E31D17E323553920007B0F5D /* WYhistoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +330,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E374F85723557F1D00B584E3 /* ZWHUDTool.m in Sources */,
+				E31D17E223553920007B0F5D /* WYhistoryTableViewCell.m in Sources */,
 				E3944A922352F84500955C9E /* ZWNetworkingManager.m in Sources */,
 				E3944A912352F84500955C9E /* ZWAPIRequestTool.m in Sources */,
 				3E93826523541CF70029A64A /* UserManager.m in Sources */,
 				E3ACF185235177BA00F9DFF5 /* ViewController.m in Sources */,
+				E31D17E623553B55007B0F5D /* WYHistoryViewController.m in Sources */,
 				3E93827123546BB10029A64A /* RankViewController.m in Sources */,
 				E3ACF190235177BC00F9DFF5 /* main.m in Sources */,
 				3E938269235426160029A64A /* WYTableViewCell.m in Sources */,
 				3E93826223540EE50029A64A /* MenuViewController.m in Sources */,
 				3E93827423548AD60029A64A /* WYtitleView.m in Sources */,
 				E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */,
+				E374F8532355777C00B584E3 /* gameViewController.m in Sources */,
 				E3ACF182235177BA00F9DFF5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

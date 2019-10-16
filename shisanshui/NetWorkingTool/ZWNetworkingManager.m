@@ -7,7 +7,7 @@
 //
 
 #import "ZWNetworkingManager.h"
-
+#import "UserManager.h"
 @interface ZWNetworkingManager ()
 
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
@@ -25,6 +25,7 @@ static ZWNetworkingManager *_manager = nil;
         self.sessionManager = [AFHTTPSessionManager manager];
         self.sessionManager.requestSerializer.timeoutInterval = 10.0;
         self.sessionManager.requestSerializer=[AFJSONRequestSerializer serializer];
+        
     }
     return self;
 }
