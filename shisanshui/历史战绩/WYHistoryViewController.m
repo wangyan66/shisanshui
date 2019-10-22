@@ -9,6 +9,7 @@
 #import "WYHistoryViewController.h"
 #import "WYhistoryTableViewCell.h"
 #import "UserManager.h"
+#import "WYDetailHistoryViewController.h"
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 @interface WYHistoryViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -141,5 +142,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    WYDetailHistoryViewController *vc = [[WYDetailHistoryViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end
