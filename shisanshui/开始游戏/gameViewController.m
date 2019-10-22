@@ -14,10 +14,18 @@
 @property (nonatomic,assign)int identifier;
 @property (nonatomic,strong) NSDictionary *data;
 @property (nonatomic,strong) NSArray *card;
+@property (nonatomic,assign) BOOL isDealing;
+@property (nonatomic,assign)int count;
 @end
 
 @implementation gameViewController
 - (IBAction)sendPoker:(id)sender {
+    while (1) {
+        [self AIPoker];
+    }
+    
+}
+- (void)requestBestPoker{
     __weak __typeof(self) weakSelf = self;
     NSString *Str = _data[@"id"];
     self.identifier = Str.intValue;
@@ -40,7 +48,7 @@
                                                         NSLog(@"%@", error);
                                                     } else {
                                                         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-                                                        NSLog(@"%@", httpResponse);
+                                                        
                                                         NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
                                                         weakSelf.card =responseObject[@"card"];
                                                         [weakSelf send];
@@ -48,8 +56,8 @@
                                                     }
                                                 }];
     [dataTask resume];
-    
 }
+// 开始AI自动打牌
 //发送牌
 - (void)send{
     NSDictionary *headers = @{ @"content-type": @"application/json",
@@ -73,17 +81,19 @@
                                                         NSLog(@"%@", error);
                                                     } else {
                                                         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-                                                        NSLog(@"%@", httpResponse);
+                                                       
                                                         
                                                         NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
-                                                        NSLog(@"send card response%@",responseObject);
+                                                        _isDealing = NO;
+                                                        _count++;
+                                                        NSLog(@"resopnse%@",responseObject);
                                                 
                                                         
-                                                        dispatch_async(dispatch_get_main_queue(), ^{
-                                                                    NSTimeInterval kTimeIntervalShort = 0.8;
-                                                [[ZWHUDTool showPlainHUDInView:[UIApplication sharedApplication].keyWindow text:@"出牌成功"] hideAnimated:YES afterDelay:kTimeIntervalShort];
-                                                            [self.navigationController popViewControllerAnimated:YES];
-                                                        });
+//                                                        dispatch_async(dispatch_get_main_queue(), ^{
+//                                                                    NSTimeInterval kTimeIntervalShort = 0.8;
+//                                                [[ZWHUDTool showPlainHUDInView:[UIApplication sharedApplication].keyWindow text:@"出牌成功"] hideAnimated:YES afterDelay:kTimeIntervalShort];
+//                                                            [self.navigationController popViewControllerAnimated:YES];
+//                                                        });
                                                         
                                                     }
                                                 }];
@@ -94,7 +104,8 @@
     self.title = @"当前战局";
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
-    [self getPoker];
+    _count = 0;
+    self.isDealing = NO;
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -121,18 +132,22 @@
                                                     } else {
                                                         NSHTTPURLResponse *httpResponse = ( NSHTTPURLResponse *) response;
                                                         NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
-                                                        NSLog(@"response%@",responseObject);
+                                                        
                                                         
                                                         weakSelf.data = responseObject[@"data"];
+                                                        [weakSelf requestBestPoker];
                                                     }
                                                 }];
     [dataTask resume];
     
 }
-- (void)AIPoker:(NSDictionary *)data{
-    [ZWAPIRequestTool requestPokerWithData:data result:^(id response, BOOL success) {
-        NSLog(@"response%@",response);
-    }];
+- (void)AIPoker{
+    
+    if (!_isDealing) {
+        NSLog(@"第%d次打牌开始",_count);
+        _isDealing = YES;
+        [self getPoker];
+    }
     
 }
 @end
