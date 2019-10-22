@@ -142,7 +142,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    WYDetailHistoryViewController *vc = [[WYDetailHistoryViewController alloc]init];
+    WYDetailHistoryViewController *vc = [[UIViewController alloc] initWithNibName:@"WYDetailHistoryViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

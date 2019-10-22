@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImageView *imageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"xingxijiem"]];
+    UIImageView *imageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"back"]];
     imageView.frame = [UIScreen mainScreen].bounds;
     [self.view addSubview:imageView];
     

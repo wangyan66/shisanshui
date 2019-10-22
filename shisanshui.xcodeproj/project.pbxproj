@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E3ACE27235F352100984551 /* WYDetailHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3ACE26235F352100984551 /* WYDetailHistoryViewController.m */; };
+		3E3ACE29235F465200984551 /* WYDetailHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3ACE28235F465100984551 /* WYDetailHistoryViewController.xib */; };
 		3E93826223540EE50029A64A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826123540EE50029A64A /* MenuViewController.m */; };
 		3E93826523541CF70029A64A /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826423541CF70029A64A /* UserManager.m */; };
 		3E938269235426160029A64A /* WYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E938267235426160029A64A /* WYTableViewCell.m */; };
@@ -37,6 +38,7 @@
 		11F8D86CA9BE9E867F89A142 /* Pods-shisanshui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.debug.xcconfig"; sourceTree = "<group>"; };
 		3E3ACE25235F352100984551 /* WYDetailHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYDetailHistoryViewController.h; sourceTree = "<group>"; };
 		3E3ACE26235F352100984551 /* WYDetailHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYDetailHistoryViewController.m; sourceTree = "<group>"; };
+		3E3ACE28235F465100984551 /* WYDetailHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYDetailHistoryViewController.xib; sourceTree = "<group>"; };
 		3E93826023540EE50029A64A /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		3E93826123540EE50029A64A /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		3E93826323541CF70029A64A /* UserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				E31D17E523553B55007B0F5D /* WYHistoryViewController.m */,
 				3E3ACE25235F352100984551 /* WYDetailHistoryViewController.h */,
 				3E3ACE26235F352100984551 /* WYDetailHistoryViewController.m */,
+				3E3ACE28235F465100984551 /* WYDetailHistoryViewController.xib */,
 			);
 			path = "历史战绩";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				3E93827623548AFE0029A64A /* WYtitleView.xib in Resources */,
 				3E9382782354AE770029A64A /* ziti.ttf in Resources */,
 				E3ACF18A235177BC00F9DFF5 /* Assets.xcassets in Resources */,
+				3E3ACE29235F465200984551 /* WYDetailHistoryViewController.xib in Resources */,
 				E3ACF188235177BA00F9DFF5 /* Main.storyboard in Resources */,
 				3E93826A235426160029A64A /* WYTableViewCell.xib in Resources */,
 				E31D17E323553920007B0F5D /* WYhistoryTableViewCell.xib in Resources */,
