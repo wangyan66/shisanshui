@@ -92,8 +92,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"当前战局";
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    
     [self getPoker];
     // Do any additional setup after loading the view.
 }

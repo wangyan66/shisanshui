@@ -81,7 +81,9 @@
     UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"rank"]];
     imageView.frame = UIScreen.mainScreen.bounds;
     [self.view addSubview:imageView];
-    
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc]init];
+    backButtonItem.tintColor = [UIColor grayColor];
+    self.navigationItem.backBarButtonItem = backButtonItem;
     
 }
 
@@ -142,7 +144,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    WYDetailHistoryViewController *vc = [[UIViewController alloc] initWithNibName:@"WYDetailHistoryViewController" bundle:nil];
+    WYDetailHistoryViewController *vc = [[WYDetailHistoryViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

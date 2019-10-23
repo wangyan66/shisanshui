@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E3ACE27235F352100984551 /* WYDetailHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3ACE26235F352100984551 /* WYDetailHistoryViewController.m */; };
-		3E3ACE29235F465200984551 /* WYDetailHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3ACE28235F465100984551 /* WYDetailHistoryViewController.xib */; };
 		3E93826223540EE50029A64A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826123540EE50029A64A /* MenuViewController.m */; };
 		3E93826523541CF70029A64A /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93826423541CF70029A64A /* UserManager.m */; };
 		3E938269235426160029A64A /* WYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E938267235426160029A64A /* WYTableViewCell.m */; };
@@ -21,6 +19,8 @@
 		E31D17E223553920007B0F5D /* WYhistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D17E023553920007B0F5D /* WYhistoryTableViewCell.m */; };
 		E31D17E323553920007B0F5D /* WYhistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31D17E123553920007B0F5D /* WYhistoryTableViewCell.xib */; };
 		E31D17E623553B55007B0F5D /* WYHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D17E523553B55007B0F5D /* WYHistoryViewController.m */; };
+		E362F2E7235F6B0900A31915 /* WYDetailHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E362F2E5235F6B0900A31915 /* WYDetailHistoryViewController.m */; };
+		E362F2E8235F6B0900A31915 /* WYDetailHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E362F2E6235F6B0900A31915 /* WYDetailHistoryViewController.xib */; };
 		E374F8532355777C00B584E3 /* gameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E374F8522355777C00B584E3 /* gameViewController.m */; };
 		E374F85723557F1D00B584E3 /* ZWHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E374F85623557F1D00B584E3 /* ZWHUDTool.m */; };
 		E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3944A8A2352D61800955C9E /* LoginAndRegisterViewController.m */; };
@@ -36,9 +36,6 @@
 
 /* Begin PBXFileReference section */
 		11F8D86CA9BE9E867F89A142 /* Pods-shisanshui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shisanshui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shisanshui/Pods-shisanshui.debug.xcconfig"; sourceTree = "<group>"; };
-		3E3ACE25235F352100984551 /* WYDetailHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYDetailHistoryViewController.h; sourceTree = "<group>"; };
-		3E3ACE26235F352100984551 /* WYDetailHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYDetailHistoryViewController.m; sourceTree = "<group>"; };
-		3E3ACE28235F465100984551 /* WYDetailHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYDetailHistoryViewController.xib; sourceTree = "<group>"; };
 		3E93826023540EE50029A64A /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		3E93826123540EE50029A64A /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		3E93826323541CF70029A64A /* UserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
@@ -59,6 +56,9 @@
 		E31D17E123553920007B0F5D /* WYhistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYhistoryTableViewCell.xib; sourceTree = "<group>"; };
 		E31D17E423553B55007B0F5D /* WYHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYHistoryViewController.h; sourceTree = "<group>"; };
 		E31D17E523553B55007B0F5D /* WYHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYHistoryViewController.m; sourceTree = "<group>"; };
+		E362F2E4235F6B0900A31915 /* WYDetailHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYDetailHistoryViewController.h; sourceTree = "<group>"; };
+		E362F2E5235F6B0900A31915 /* WYDetailHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYDetailHistoryViewController.m; sourceTree = "<group>"; };
+		E362F2E6235F6B0900A31915 /* WYDetailHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WYDetailHistoryViewController.xib; sourceTree = "<group>"; };
 		E374F8512355777C00B584E3 /* gameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gameViewController.h; sourceTree = "<group>"; };
 		E374F8522355777C00B584E3 /* gameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gameViewController.m; sourceTree = "<group>"; };
 		E374F85523557F1D00B584E3 /* ZWHUDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWHUDTool.h; sourceTree = "<group>"; };
@@ -133,9 +133,9 @@
 				E31D17E123553920007B0F5D /* WYhistoryTableViewCell.xib */,
 				E31D17E423553B55007B0F5D /* WYHistoryViewController.h */,
 				E31D17E523553B55007B0F5D /* WYHistoryViewController.m */,
-				3E3ACE25235F352100984551 /* WYDetailHistoryViewController.h */,
-				3E3ACE26235F352100984551 /* WYDetailHistoryViewController.m */,
-				3E3ACE28235F465100984551 /* WYDetailHistoryViewController.xib */,
+				E362F2E4235F6B0900A31915 /* WYDetailHistoryViewController.h */,
+				E362F2E5235F6B0900A31915 /* WYDetailHistoryViewController.m */,
+				E362F2E6235F6B0900A31915 /* WYDetailHistoryViewController.xib */,
 			);
 			path = "历史战绩";
 			sourceTree = "<group>";
@@ -284,9 +284,9 @@
 			files = (
 				E3ACF18D235177BC00F9DFF5 /* LaunchScreen.storyboard in Resources */,
 				3E93827623548AFE0029A64A /* WYtitleView.xib in Resources */,
+				E362F2E8235F6B0900A31915 /* WYDetailHistoryViewController.xib in Resources */,
 				3E9382782354AE770029A64A /* ziti.ttf in Resources */,
 				E3ACF18A235177BC00F9DFF5 /* Assets.xcassets in Resources */,
-				3E3ACE29235F465200984551 /* WYDetailHistoryViewController.xib in Resources */,
 				E3ACF188235177BA00F9DFF5 /* Main.storyboard in Resources */,
 				3E93826A235426160029A64A /* WYTableViewCell.xib in Resources */,
 				E31D17E323553920007B0F5D /* WYhistoryTableViewCell.xib in Resources */,
@@ -353,7 +353,7 @@
 				3E93827423548AD60029A64A /* WYtitleView.m in Sources */,
 				E3944A8B2352D61800955C9E /* LoginAndRegisterViewController.m in Sources */,
 				E374F8532355777C00B584E3 /* gameViewController.m in Sources */,
-				3E3ACE27235F352100984551 /* WYDetailHistoryViewController.m in Sources */,
+				E362F2E7235F6B0900A31915 /* WYDetailHistoryViewController.m in Sources */,
 				E3ACF182235177BA00F9DFF5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
