@@ -1,4 +1,17 @@
+osx_image: xcode9.0
 language: objective-c
+
+cache: cocoapods
+podfile: Podfile
+
+before_install:
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+  - sh Startup.sh
+
 script:
-  - xctool -workspace shisanshui.xcworkspace -scheme shisanshui -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace shisanshui.xcworkspace -scheme shisanshui -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - set -o pipefail
+  - xcodebuild -workspace shisanshui.xcworkspace -scheme shisanshui -destination "OS=10.3.1,name=iPhone SE" -configuration Debug ONLY_ACTIVE_ARCH=NO build CODE_SIGN_IDENTITY='' | xcpretty
+
+after_success:
+  - sleep 3
