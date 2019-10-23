@@ -497,6 +497,7 @@
 			baseConfigurationReference = 11F8D86CA9BE9E867F89A142 /* Pods-shisanshui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89K6MJ2HAL;
 				INFOPLIST_FILE = shisanshui/Info.plist;
@@ -505,8 +506,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wangyan.shisanshui;
+				PRODUCT_BUNDLE_IDENTIFIER = wangyan.shisanshui.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -516,6 +518,7 @@
 			baseConfigurationReference = AE360D9BBF13CD9E4C24C2CC /* Pods-shisanshui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89K6MJ2HAL;
 				INFOPLIST_FILE = shisanshui/Info.plist;
@@ -524,8 +527,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wangyan.shisanshui;
+				PRODUCT_BUNDLE_IDENTIFIER = wangyan.shisanshui.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

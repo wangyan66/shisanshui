@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"详情战绩";
     UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"xingxijiem"]];
     imageView.frame = UIScreen.mainScreen.bounds;
     [self.view addSubview:imageView];
